@@ -65,7 +65,7 @@ h1 {
   line-height: 6.8rem;
 }
 .main {
-  background-image: url("https://github.com/orionaon/barber-shop/blob/main/assets/barber-shop-main-bg.jpg");
+  background-image: url("assets/barber-shop-main-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 -5rem;
