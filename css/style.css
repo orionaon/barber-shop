@@ -1,0 +1,526 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* -----STYLING----- */
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Serif', sans-serif; */
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto Serif', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.srvcs p, .abt p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+}
+.blkBox {
+  color: white;
+  background: black;
+  text-transform: uppercase;
+}
+
+/* -----NAVIGATION----- */
+header {
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 20%;
+  font-size: 2.5rem;
+  margin-left: 3rem;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4rem;
+  text-transform: uppercase;
+  width: 80%;
+  font-size: 1.3rem;
+  margin-right: 3rem;
+}
+.menu {
+  display: flex;
+  gap: 4rem;
+}
+i {
+  color: rgba(133, 133, 133, 0.8);
+}
+
+
+/* -----MAIN----- */
+h1 {
+  color: white;
+  font-size: 6rem;
+  letter-spacing: 0.5rem;
+  line-height: 6.8rem;
+}
+.main {
+  background-image: url("C:/Users/orion/Documents/coding/my-websites/barber-mockup/assets/barber-shop-main-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -5rem;
+  height: 85rem;
+}
+
+.hiLt {
+  padding: 25rem 0 10rem 15rem;
+  text-transform: uppercase;
+}
+.hiLt p {
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+
+  padding: 2rem 0;
+}
+.hiLt a {
+  height: 3.4rem;
+  width: 12rem;
+  display: inline-block;
+  text-align: center;
+  padding-top: 1.2rem;
+}
+
+/* -----SERVICES----- */
+.sect2 {
+  margin: 2rem 0;
+}
+.sect2 h2 {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  text-align: center;
+}
+.srvcs {
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.srvcs section {
+  width: 20%;
+  text-align: center;
+}
+.srvcs h5 {
+  padding-top: 1.5rem;
+  font-size: 1.4rem;
+  margin: 1rem;
+  text-transform: uppercase;
+}
+.srvcs p {
+  line-height: 2rem;
+}
+.icon {
+  height: 6rem;
+}
+
+
+/* -----ABOUT----- */
+.abt {
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(190, 190, 190,0.8);
+}
+.abt section {
+  width: 35%;
+}
+.abt h2 {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+.abt p {
+  line-height: 2rem;
+  padding-right: 6rem;
+  margin: 3rem 0;
+}
+.abt a {
+  height: 3.4rem;
+  width: 12rem;
+  display: inline-block;
+  text-align: center;
+  padding-top: 1.2rem;
+}
+.vid img {
+  margin: 0 auto;
+  display: block;
+  height: 28rem;
+}
+
+/* -----BARBERS----- */
+.shaun {
+  background-image: url("C:/Users/orion/Documents/coding/my-websites/barber-mockup/assets/shaun.jpg");
+}
+.thom {
+  background-image: url("C:/Users/orion/Documents/coding/my-websites/barber-mockup/assets/thom.jpg");
+}
+.sam {
+  background-image: url("C:/Users/orion/Documents/coding/my-websites/barber-mockup/assets/samuel.jpg");
+}
+.team {
+  height: 42rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 2rem 0;
+}
+.shaun, .thom, .sam {
+  width: 24rem;
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.team .blkBox {
+  height: 6rem;
+  width: 20rem;
+  margin-bottom: -3rem;
+  text-align: center;
+}
+.team .blkBox h6 {
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  padding-bottom: 0.7rem;
+}
+.team span {
+  text-transform: none;
+}
+
+
+.lkbk {
+  height: 90rem;
+  text-align: center;
+  margin-top: 10rem;
+}
+.lkbk h2 {
+  font-size: 3.5rem;
+  padding: 1rem 0;
+}
+.lkbk hr {
+  width: 3rem;
+  height: 0.4rem;
+  background: black;
+}
+.mosaic {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  gap: 1.8rem 0;
+  width: 60%;
+  margin: 3rem auto;
+  height: 70rem;
+}
+/* .mosaic div {
+  border: 1px solid black;
+  width: 31%;
+}
+.mo1, .mo4, .mo5 {
+  height: 20rem;
+}
+.mo2, .mo3, .mo6 {
+  height: 45rem;
+}
+.mo4, .mo6 {
+  align-self: baseline;
+}
+.mo1, .mo4, .mo5 {
+  background-image: url("C:/Users/orion/Documents/coding/my-websites/barber-mockup/assets/bg-main3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mo2, .mo3, .mo6 {
+  background-image: url("C:/Users/orion/Documents/coding/my-websites/barber-mockup/assets/picFive.png");
+  background-size: cover;
+  background-position: 35rem 0;
+}
+.mo4 {
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.8);
+  font-size: 10rem;
+}
+.mo4 i {
+  padding: 5rem;
+  color: rgba(255,255,255,0.9);
+} */
+
+footer {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/* -----RESPONSIVE----- */
+
+@media all and (max-width: 500px) {
+  /* hamburger menu instead, add lookbook */
+  nav, .abt, .lkbk, .hrs, .slider, .srvcs p {
+    display: none;
+  }
+
+  .main {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 -0.1rem;
+  }
+  .hiLt {
+    padding: 3rem 0 9rem 2rem;
+  }
+  .hiLt h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .hiLt p {
+    width: 40%;
+    padding: 2rem 0;
+    line-height: 1.5rem;
+  }
+  .hiLt a {
+    margin-top: 1rem;
+  }
+  .dscnt {
+    background: none;
+    color: black;
+    width: 100%;
+    margin: 0;
+    height: 20rem;
+  }
+  .dscnt > span {
+    margin-bottom: 0;
+  }
+  .dscnt h3 {
+    font-size: 1.2rem;
+    line-height: 3.5rem;
+    padding: 0 1.5rem;
+  }
+  .dscnt h3 br {
+    display: none;
+  }
+  .dscnt h3 span {
+    font-size: 2.5rem;
+  }
+  .whtBox {
+    background: black;
+    color: white;
+    margin: 1rem 1.5rem;
+  }
+
+  .srvcs {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 15rem;
+  }
+  .srvcs section {
+    width: 33.3333%;
+  }
+
+  .team {
+    height: 25rem;
+  }
+  .wil, .lake, .smi {
+    height: 14rem;
+    width: 14rem;
+    border-radius: 50%;
+  }
+  .lake, .smi {
+    margin-left: 1.5rem;
+  }
+  .team .blkBox {
+    height: 4.5rem;
+    width: 16rem;
+    margin-bottom: -2rem;
+  }
+  .team .blkBox h6 {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+  }
+  .offer {
+    height: 16rem;
+  }
+  .offer section {
+    background-position: 0 1rem;
+    height: 16rem;
+  }
+  .offer span {
+    font-size: 1.2rem;
+  }
+  .txt {
+    padding: 2rem;
+  }  
+  .offer h3 {
+    font-size: 1.5rem;
+  }
+  .offer h3 span {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+  /* hamburger menu instead */  
+  nav, .abt, .hrs, .slider, .srvcs p {
+    display: none;
+  }
+  .main {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 -0.1rem;
+  }
+  .hiLt {
+    padding: 3rem 0 9rem 2rem;
+  }
+  .hiLt h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .hiLt p {
+    width: 40%;
+    padding: 2rem 0;
+    line-height: 1.5rem;
+  }
+  .hiLt a {
+    margin-top: 1rem;
+  }
+  .dscnt {
+    background: none;
+    color: black;
+    width: 100%;
+    margin: 0;
+    height: 20rem;
+  }
+  .dscnt > span {
+    margin-bottom: 0;
+  }
+  .dscnt h3 {
+    font-size: 1.2rem;
+    line-height: 3.5rem;
+    padding: 0 1.5rem;
+  }
+  .dscnt h3 br {
+    display: none;
+  }
+  .dscnt h3 span {
+    font-size: 2.5rem;
+  }
+  .whtBox {
+    background: black;
+    color: white;
+    margin: 1rem 1.5rem;
+  }
+
+  .srvcs {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 15rem;
+  }
+  .srvcs section {
+    width: 33.3333%;
+  }
+
+  .team {
+    height: 25rem;
+  }
+  .wil, .lake, .smi {
+    height: 14rem;
+    width: 14rem;
+    border-radius: 50%;
+  }
+  .lake, .smi {
+    margin-left: 1.5rem;
+  }
+  .team .blkBox {
+    height: 4.5rem;
+    width: 16rem;
+    margin-bottom: -2rem;
+  }
+  .team .blkBox h6 {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+  }
+  .offer {
+    height: 16rem;
+  }
+  .offer section {
+    background-position: 0 1rem;
+    height: 16rem;
+  }
+  .offer span {
+    font-size: 1.2rem;
+  }
+  .txt {
+    padding: 2rem;
+  }  
+  .offer h3 {
+    font-size: 1.5rem;
+  }
+  .offer h3 span {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .lkbk {
+    height: 50rem;
+    margin-top: 8rem;
+  }
+  .mosaic {
+    height: 50rem;
+  }
+  .mo1, .mo4, .mo5 {
+    height: 15rem;
+  }
+  .mo2, .mo3, .mo6 {
+    height: 33rem;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  .main {
+    background-position: 0 -5rem;
+  }
+  nav {
+    padding-left: 1rem;
+  }
+  nav a {
+    padding-right: 2.5rem;
+  }
+  .hiLt {
+    padding: 5rem 0 10rem 5rem;
+  }
+  .hrs {
+    margin-top: 20rem;
+  }
+  .dscnt {
+    margin-left: 5rem;
+  }
+  .slider {
+    margin-top: 20rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .main {
+    
+  }
+  .mo2, .mo3, .mo6 {
+    background-position: 50rem 0;
+  }
+}
