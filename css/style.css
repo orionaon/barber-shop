@@ -114,7 +114,7 @@ h1 {
   line-height: 6.8rem;
 }
 .main {
-  background-image: url(".assets/barber-shop-main-bg.jpg");
+  background-image: url("../assets/barber-shop-main-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 -5rem;
@@ -208,13 +208,13 @@ h1 {
 
 /* -----BARBERS----- */
 .shaun {
-  background-image: url("./assets/shaun.jpg");
+  background-image: url("../assets/shaun.jpg");
 }
 .thom {
-  background-image: url("./assets/thom.jpg");
+  background-image: url("../assets/thom.jpg");
 }
 .sam {
-  background-image: url("./assets/samuel.jpg");
+  background-image: url("../assets/samuel.jpg");
 }
 .team {
   height: 42rem;
