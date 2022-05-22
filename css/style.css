@@ -248,11 +248,14 @@ h1 {
   text-transform: none;
 }
 
-
-.lkbk {
-  height: 90rem;
+/* -----LOOKBOOK----- */
+/* .lkbk {
+  height: 80rem;
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .lkbk h2 {
   font-size: 3.5rem;
@@ -265,43 +268,37 @@ h1 {
 }
 .mosaic {
   display: flex;
-  justify-content: center;
   flex-flow: column wrap;
-  gap: 1.8rem 0;
+  align-items: center;
+  gap: 1.2rem 0;
   width: 60%;
   margin: 3rem auto;
-  height: 70rem;
+  height: 65rem;
 }
-/* .mosaic div {
+ .mosaic div {
   border: 1px solid black;
-  width: 31%;
-}
-.mo1, .mo4, .mo5 {
-  height: 20rem;
-}
-.mo2, .mo3, .mo6 {
-  height: 45rem;
-}
-.mo4, .mo6 {
-  align-self: baseline;
-}
-.mo1, .mo4, .mo5 {
-  background-image: url("");
+  width: 25%;
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
+  height: 30rem;
 }
-.mo2, .mo3, .mo6 {
-  background-image: url("");
-  background-size: cover;
-  background-position: 35rem 0;
+.mo1 {
+  background-image: url("../assets/lookbook1.jpg");
+}
+.mo2 {
+  background-image: url("../assets/lookbook2.jpg");
+}
+.mo3 {
+  background-image: url("../assets/lookbook3.jpg");
 }
 .mo4 {
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.8);
-  font-size: 10rem;
+  background-image: url("../assets/lookbook4.jpg");
 }
-.mo4 i {
-  padding: 5rem;
-  color: rgba(255,255,255,0.9);
+.mo5 {
+  background-image: url("../assets/lookbook5.jpg");
+}
+.mo6 {
+  background-image: url("../assets/lookbook6.jpg");
 } */
 
 footer {
