@@ -118,11 +118,11 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 -5rem;
-  height: 85rem;
+  margin-bottom: 4rem;
 }
 
 .hiLt {
-  padding: 25rem 0 10rem 15rem;
+  padding: 15rem 0 10rem 15rem;
   text-transform: uppercase;
 }
 .hiLt p {
@@ -156,7 +156,7 @@ h1 {
   align-items: center;
 }
 .srvcs section {
-  width: 20%;
+  width: 25%;
   text-align: center;
 }
 .srvcs h5 {
@@ -175,14 +175,14 @@ h1 {
 
 /* -----ABOUT----- */
 .abt {
-  height: 40rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background: rgba(190, 190, 190,0.8);
+  padding: 2rem 10rem;
 }
-.abt section {
-  width: 35%;
+.info {
+  width: 40%;
 }
 .abt h2 {
   text-transform: uppercase;
@@ -248,59 +248,6 @@ h1 {
   text-transform: none;
 }
 
-/* -----LOOKBOOK----- */
-/* .lkbk {
-  height: 80rem;
-  text-align: center;
-  margin-top: 7rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.lkbk h2 {
-  font-size: 3.5rem;
-  padding: 1rem 0;
-}
-.lkbk hr {
-  width: 3rem;
-  height: 0.4rem;
-  background: black;
-}
-.mosaic {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  gap: 1.2rem 0;
-  width: 60%;
-  margin: 3rem auto;
-  height: 65rem;
-}
- .mosaic div {
-  border: 1px solid black;
-  width: 25%;
-  background-size: cover;
-  /* background-repeat: no-repeat; */
-  height: 30rem;
-}
-.mo1 {
-  background-image: url("../assets/lookbook1.jpg");
-}
-.mo2 {
-  background-image: url("../assets/lookbook2.jpg");
-}
-.mo3 {
-  background-image: url("../assets/lookbook3.jpg");
-}
-.mo4 {
-  background-image: url("../assets/lookbook4.jpg");
-}
-.mo5 {
-  background-image: url("../assets/lookbook5.jpg");
-}
-.mo6 {
-  background-image: url("../assets/lookbook6.jpg");
-} */
-
 footer {
   height: 5rem;
   display: flex;
@@ -309,264 +256,333 @@ footer {
   font-size: 1.2rem;
 }
 
+
+/* -----HAMBURGER----- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.container {
+  max-width: 1050px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: #0e2431;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 120px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+
+
+
+
 /* -----RESPONSIVE----- */
 
-@media all and (max-width: 500px) {
-  /* hamburger menu instead, add lookbook */
-  nav, .abt, .lkbk, .hrs, .slider, .srvcs p {
+  @media all and (max-width: 500px) {
+    .menu {
     display: none;
-  }
-
-  .main {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 0 -0.1rem;
-  }
-  .hiLt {
-    padding: 3rem 0 9rem 2rem;
-  }
-  .hiLt h1 {
-    font-size: 3rem;
-    line-height: 3.5rem;
-  }
-  .hiLt p {
-    width: 40%;
-    padding: 2rem 0;
-    line-height: 1.5rem;
-  }
-  .hiLt a {
-    margin-top: 1rem;
-  }
-  .dscnt {
-    background: none;
-    color: black;
-    width: 100%;
-    margin: 0;
-    height: 20rem;
-  }
-  .dscnt > span {
-    margin-bottom: 0;
-  }
-  .dscnt h3 {
-    font-size: 1.2rem;
-    line-height: 3.5rem;
-    padding: 0 1.5rem;
-  }
-  .dscnt h3 br {
-    display: none;
-  }
-  .dscnt h3 span {
-    font-size: 2.5rem;
-  }
-  .whtBox {
-    background: black;
-    color: white;
-    margin: 1rem 1.5rem;
-  }
-
-  .srvcs {
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    width: 100%;
-    height: 15rem;
-  }
-  .srvcs section {
-    width: 33.3333%;
-  }
-
-  .team {
-    height: 25rem;
-  }
-  .wil, .lake, .smi {
-    height: 14rem;
-    width: 14rem;
-    border-radius: 50%;
-  }
-  .lake, .smi {
-    margin-left: 1.5rem;
-  }
-  .team .blkBox {
-    height: 4.5rem;
-    width: 16rem;
-    margin-bottom: -2rem;
-  }
-  .team .blkBox h6 {
-    font-size: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 0.7rem;
-  }
-  .offer {
-    height: 16rem;
-  }
-  .offer section {
-    background-position: 0 1rem;
-    height: 16rem;
-  }
-  .offer span {
-    font-size: 1.2rem;
-  }
-  .txt {
-    padding: 2rem;
-  }  
-  .offer h3 {
-    font-size: 1.5rem;
-  }
-  .offer h3 span {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-}
-
-@media (min-width: 501px) and (max-width: 900px) {
-  /* hamburger menu instead */  
-  nav, .abt, .hrs, .slider, .srvcs p {
-    display: none;
-  }
-  .main {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 0 -0.1rem;
-  }
-  .hiLt {
-    padding: 3rem 0 9rem 2rem;
-  }
-  .hiLt h1 {
-    font-size: 3rem;
-    line-height: 3.5rem;
-  }
-  .hiLt p {
-    width: 40%;
-    padding: 2rem 0;
-    line-height: 1.5rem;
-  }
-  .hiLt a {
-    margin-top: 1rem;
-  }
-  .dscnt {
-    background: none;
-    color: black;
-    width: 100%;
-    margin: 0;
-    height: 20rem;
-  }
-  .dscnt > span {
-    margin-bottom: 0;
-  }
-  .dscnt h3 {
-    font-size: 1.2rem;
-    line-height: 3.5rem;
-    padding: 0 1.5rem;
-  }
-  .dscnt h3 br {
-    display: none;
-  }
-  .dscnt h3 span {
-    font-size: 2.5rem;
-  }
-  .whtBox {
-    background: black;
-    color: white;
-    margin: 1rem 1.5rem;
-  }
-
-  .srvcs {
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    width: 100%;
-    height: 15rem;
-  }
-  .srvcs section {
-    width: 33.3333%;
-  }
-
-  .team {
-    height: 25rem;
-  }
-  .wil, .lake, .smi {
-    height: 14rem;
-    width: 14rem;
-    border-radius: 50%;
-  }
-  .lake, .smi {
-    margin-left: 1.5rem;
-  }
-  .team .blkBox {
-    height: 4.5rem;
-    width: 16rem;
-    margin-bottom: -2rem;
-  }
-  .team .blkBox h6 {
-    font-size: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 0.7rem;
-  }
-  .offer {
-    height: 16rem;
-  }
-  .offer section {
-    background-position: 0 1rem;
-    height: 16rem;
-  }
-  .offer span {
-    font-size: 1.2rem;
-  }
-  .txt {
-    padding: 2rem;
-  }  
-  .offer h3 {
-    font-size: 1.5rem;
-  }
-  .offer h3 span {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-
-  .lkbk {
-    height: 50rem;
-    margin-top: 8rem;
-  }
-  .mosaic {
-    height: 50rem;
-  }
-  .mo1, .mo4, .mo5 {
-    height: 15rem;
-  }
-  .mo2, .mo3, .mo6 {
-    height: 33rem;
-  }
-}
-
-@media (min-width: 901px) and (max-width: 1200px) {
-  .main {
-    background-position: 0 -5rem;
   }
   nav {
-    padding-left: 1rem;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
   }
-  nav a {
-    padding-right: 2.5rem;
+  nav > a {
+    display: none;
+  }
+
+  .main {
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
   .hiLt {
-    padding: 5rem 0 10rem 5rem;
+    padding: 3rem 0 9rem 2rem;
   }
-  .hrs {
-    margin-top: 20rem;
+  .hiLt h1 {
+    font-size: 3rem;
+    line-height: 3rem;
   }
-  .dscnt {
-    margin-left: 5rem;
+  .hiLt p {
+    width: 70%;
+    padding: 2rem 0;
+    line-height: 1.5rem;
   }
-  .slider {
-    margin-top: 20rem;
+  .hiLt a {
+    margin-top: 1rem;
+  }
+
+  .srvcs {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 15rem;
+  }
+  .sect2 h2 {
+    margin-bottom: 3rem;
+  }
+  .srvcs section {
+    width: 33.3333%;
+  }
+  .srvcs p {
+    display: none;
+  }
+
+  .abt {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  .abt a, .abt h2 {
+    align-self: center;
+  }
+  .abt p {
+    text-align: center;
+    padding: 0;
+  }
+  .abt img {
+    margin-top: 2rem;
+    height: 20rem;
+  }
+
+  .team {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    height: 80rem;
+  }
+  .shaun, .thom, .sam {
+    background-size: ;
+    height: 25rem;
+  }
+  .team .blkBox {
+    height: 4.5rem;
+    width: 16rem;
+    margin-bottom: -2rem;
+  }
+  .team .blkBox h6 {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
   }
 }
 
-@media (min-width: 1201px) {
-  .main {
-    
+@media (min-width: 501px) and (max-width: 1000px) {
+  /* hamburger menu instead */  
+  .menu {
+    display: none;
   }
-  .mo2, .mo3, .mo6 {
-    background-position: 50rem 0;
+  nav {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end
+  }
+
+  .main {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .hiLt {
+    padding: 3rem 0 9rem 2rem;
+  }
+  .hiLt h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  .hiLt p {
+    width: 40%;
+    padding: 2rem 0;
+    line-height: 1.5rem;
+  }
+  .hiLt a {
+    margin-top: 1rem;
+  }
+
+  .srvcs {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 15rem;
+  }
+  .sect2 h2 {
+    margin-bottom: 3rem;
+  }
+  .srvcs section {
+    width: 33.3333%;
+  }
+  .srvcs p {
+    display: none;
+  }
+
+  .abt {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  .abt a, .abt h2 {
+    align-self: center;
+  }
+  .abt p {
+    text-align: center;
+    padding: 0;
+  }
+  .abt img {
+    margin-top: 2rem;
+  }
+
+  .team {
+    height: 25rem;
+  }
+  .shaun, .thom, .sam {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+  }
+  .team .blkBox {
+    height: 4.5rem;
+    width: 16rem;
+    margin-bottom: -2rem;
+  }
+  .team .blkBox h6 {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+  }
+}
+
+@media (min-width: 1001px) {
+  .navbar {
+    display: none;
   }
 }
